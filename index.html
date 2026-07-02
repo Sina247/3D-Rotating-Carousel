@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>3D Rotating Carousel</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="fonts/vazirmatn.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div id="inner">
+				<div id="grain"></div>
+				<div id="ghost-text">مجسمه</div>
+				<div id="carousel" style="position: absolute; inset: 0; z-index: 3"></div>
+
+				<div id="bottom-info">
+					<p id="product-title">فیگور استریت‌ور</p>
+					<p id="product-desc">پسر با لباس نارنجی و جزئیات دقیق. بافت پارچه واقعی، مناسب کلکسیون و هدیه.</p>
+
+					<div id="nav-buttons">
+						<button class="nav-btn" id="btn-prev" aria-label="فیگور قبلی">
+							<svg viewBox="0 0 24 24">
+								<polyline points="15 18 9 12 15 6"></polyline>
+							</svg>
+						</button>
+
+						<button class="nav-btn" id="btn-next" aria-label="فیگور بعدی">
+							<svg viewBox="0 0 24 24">
+								<polyline points="9 18 15 12 9 6"></polyline>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<a id="discover" href="#">
+					<svg viewBox="0 0 24 24">
+						<line x1="5" y1="12" x2="19" y2="12"></line>
+						<polyline points="12 5 19 12 12 19"></polyline>
+					</svg>
+
+					مشاهده و سفارش
+				</a>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
